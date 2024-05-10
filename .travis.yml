@@ -12,5 +12,7 @@ jobs:
       role: "arn:aws:iam::0123456789012:role/lambda_basic_execution"
       runtime: "nodejs18.x"
       handler_name: "handler"
+      on:
+        branch: dpl-test
       edge:
         branch: tbt_4_am
