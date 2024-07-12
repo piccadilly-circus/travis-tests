@@ -43,4 +43,4 @@ jobs:
     if: (env(TEST_FLAG) = FALSE)
     script:
       - ruby ./source/ruby_hello.rb
-      - echo Test flag is ${TEST_FLAG} 
+      - echo Test flag is ${TEST_FLAG}
