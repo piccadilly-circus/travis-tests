@@ -9,6 +9,7 @@ jobs:
   include:
   - name: Bionic Ruby 2.6.6 at jobs.include[1].rvm level
     os: linux
+    arch: s390x
     dist: bionic
     language: ruby
     rvm: 2.6.6
@@ -16,6 +17,7 @@ jobs:
       - ruby ./source/ruby_hello.rb
   - name: Bionic Ruby 2.7.5 at jobs.include[1].rvm level
     os: linux
+    arch: s390x
     dist: bionic
     language: ruby
     rvm: 2.7.5
@@ -24,6 +26,7 @@ jobs:
   # testing basic conditionals
   - name: Bionic Ruby 2.6.6 TRUE
     os: linux
+    arch: s390x
     dist: bionic
     language: ruby
     #rvm: 2.6.6
@@ -33,6 +36,7 @@ jobs:
       - echo Test flag is ${TEST_FLAG} 
   - name: Bionic Ruby 2.6.6 FALSE
     os: linux
+    arch: s390x
     dist: bionic
     language: ruby
     #rvm: 2.6.6
