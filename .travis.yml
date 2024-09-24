@@ -1,3 +1,4 @@
+cache: bundler
 jobs:
   include:
     - stage: Build and Test
