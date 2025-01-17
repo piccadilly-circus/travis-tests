@@ -14,7 +14,7 @@ jobs:
         - echo "Running tests for Job A"
         - mkdir -p workspace-a
         - echo "This is data from Job A" > workspace-a/data-A.txt
-        - truncate -s 100M workspace-a/output.file
+        - truncate -s 1000M workspace-a/output.file
       workspaces:
         create:
           name: workspace-a
@@ -27,7 +27,7 @@ jobs:
         - echo "Running tests for Job B"
         - mkdir -p workspace-b
         - echo "This is data from Job B" > workspace-b/data-B.txt
-        - truncate -s 100M workspace-b/output.file
+        - truncate -s 1000M workspace-b/output.file
       workspaces:
         create:
           name: workspace-b
