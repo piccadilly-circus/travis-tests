@@ -57,11 +57,11 @@ jobs:
       script:
         - echo "Deploying using artifacts from Job A Job B and Job C"
         - cat workspace-a/data-A.txt
-        - ls -l workspace-a
+        - du -sh workspace-a
         - cat workspace-b/data-B.txt
-        - ls -l workspace-b
+        - du -sh workspace-b
         - cat workspace-c/data-C.txt
-        - ls -l workspace-c
+        - du -sh workspace-c
       workspaces:
         use:
           - workspace-a
